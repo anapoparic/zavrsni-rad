@@ -71,6 +71,7 @@
 #include "poglavlja/2-fraktalno-stablo.typ"
 #include "poglavlja/3-paralelizacija.typ"
 #include "poglavlja/4-implementacija.typ"
+#include "poglavlja/5-evaluacija.typ"
 #include "poglavlja/7-zakljucak.typ"
 
 
