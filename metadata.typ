@@ -1,12 +1,12 @@
 #let format_strane = "iso-b5"         // могуће вредности: iso-b5, a4
-#let naslov = "Шаблон и упутство за писање завршних радова"
-#let autor = "Уписати име и презиме"
+#let naslov = "Паралелно генерисање фракталних стабала: поређење Python и Rust имплементација"
+#let autor = "Ана Попарић"
 
 // На енглеском
-#let naslov_eng = "Template and tutorial for thesis preparation"
-#let autor_eng = "Upisati ime i prezime na latinici"
+#let naslov_eng = "Parallel Fractal Tree Generation: A Performance Comparison of Python and Rust Implementations"
+#let autor_eng = "Ana Poparić"
 
-#let indeks = "Уписати индекс"
+#let indeks = "SV 74/2021"
 
 // Име и презиме ментора
 #let mentor = "Игор Дејановић"
@@ -16,19 +16,19 @@
 // Скинути коментаре са одговарајућих линија
 #let studijski_program = "Софтверско инжењерство и информационе технологије"
 //#let studijski_program = "Рачунарство и аутоматика"
-#let stepen = "Мастер академске студије"
-//#let stepen = "Основне академске студије"
+//#let stepen = "Мастер академске студије"
+#let stepen = "Основне академске студије"
 
 #let godina = [#datetime.today().year()]
 
-#let kljucne_reci = "Шаблон, завршни рад, упутство"
+#let kljucne_reci = "фрактално стабло, паралелизација, Python, Rust, поређење перформанси"
 #let apstrakt = [
      Овај документ представља упутство за писање завршних радова на Факултету
      техничких наука Универзитета у Новом Саду. У исто време је и шаблон за Typst.
 ]
 
 // На енглеском
-#let kljucne_reci_eng = "Template, thesis, tutorial"
+#let kljucne_reci_eng = "fractal tree, parallelization, Python, Rust, performance comparison"
 #let apstrakt_eng = [
      This document provides guidelines for writing final theses at the Faculty
      of Technical Sciences, University of Novi Sad. At the same time, it serves

@@ -68,8 +68,13 @@
 
 // TODO: Овде укључујете поглавља
 #include "poglavlja/1-uvod.typ"
-#include "poglavlja/2-stanje.typ"
-#include "poglavlja/7-zakljucak.typ"
+#include "poglavlja/2-fraktalno-stablo.typ"
+#include "poglavlja/3-paralelizacija.typ"
+#include "poglavlja/4-zakoni-skaliranja.typ"
+#include "poglavlja/5-implementacija.typ"
+#include "poglavlja/6-evaluacija.typ"
+#include "poglavlja/7-diskusija.typ"
+#include "poglavlja/8-zakljucak.typ"
 
 
 
