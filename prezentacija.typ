@@ -435,7 +435,7 @@
       #{
         set text(size: 15pt)
         table(
-          columns: (auto, 1fr, 1fr),
+          columns: (1fr, 1fr, 1fr),
           align: center,
           inset: 10pt,
           stroke: 0.5pt + siva,
