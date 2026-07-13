@@ -23,16 +23,24 @@
 
 #let kljucne_reci = "фрактално стабло, паралелизација, Python, Rust, поређење перформанси"
 #let apstrakt = [
-     Овај документ представља упутство за писање завршних радова на Факултету
-     техничких наука Универзитета у Новом Саду. У исто време је и шаблон за Typst.
+  У раду је имплементирано и евалуирано паралелно генерисање бинарног фракталног стабла у програмским језицима 
+  Python и Rust (_multiprocessing_ наспрам _Rayon_), са поређењем кроз Амдалов закон јаког и Густафсонов закон 
+  слабог скалирања, за симетрично и асиметрично стабло са преко 8 милиона грана. 
+  Python имплементација не остварује практичну скалабилност на Windows платформи (_spawn_/_pickle_ трошак, 
+  убрзање 1,853 при $N=8$), док Rust остварује убрзање 3,244 и прати Амдалову прогнозу до граница 
+  _Hyper-Threading_ технологије, потврђујући да је приступ заснован на нитима са крађом посла значајно ефикаснији 
+  за задатке овог типа.
 ]
 
 // На енглеском
 #let kljucne_reci_eng = "fractal tree, parallelization, Python, Rust, performance comparison"
 #let apstrakt_eng = [
-     This document provides guidelines for writing final theses at the Faculty
-     of Technical Sciences, University of Novi Sad. At the same time, it serves
-     as a Typst template.
+  This thesis implements and evaluates parallel fractal tree generation in Python and Rust (_multiprocessing_ 
+  versus _Rayon_), comparing through Amdahl's strong-scaling law and Gustafson's weak-scaling law, for symmetric 
+  and asymmetric trees with over 8 million branches. The Python implementation fails to achieve practical 
+  scalability on the Windows platform (_spawn_/_pickle_ overhead, speedup 1.853 at $N=8$), while Rust achieves a 
+  speedup of 3.244 following Amdahl's prediction up to the limits of _Hyper-Threading_ technology, confirming that 
+  thread-based parallelism with work-stealing is significantly more efficient for tasks of this type.
 ]
 
 // TODO: Текст задатка добијате од ментора. Заменити доле #lorem(100) са текстом задатка.
@@ -41,7 +49,7 @@
     језицима Python и Rust.
 
     Упоредити понашање имплементација у контексту Амдаловог закона јаког скалирања и
-    Густавсоногог закона слабог скалирања. Анализирати и коментарисати резултате.
+    Густафсоновог закона слабог скалирања. Анализирати и коментарисати резултате.
 
     При изради користити препоручену праксу из области софтверског инжењерства.
     Детаљно документовати решење.
